@@ -1,0 +1,19 @@
+Btcbawt node.js based IRC bot.
+
+Reads out bitcoin price changes.
+To see in action (or inaction) connect to efnet and join #bitcoin-market
+
+To run one:
+1. edit stdin2irc.js and change the network, channel, and nick to your liking.
+2. touch keepRunning
+3. run checkbot.sh (add this to crontab)
+
+To stop:
+1. delete keepRunning
+2. kill processes spawned by checkbot.
+
+TODO:
+1. integrate changes to irc.js back to irc.node project where it came from.
+2. stop depending on the location of irc.js being /home/btcbawt/irc.js
+3. make killing the bot easier.
+4. ?
